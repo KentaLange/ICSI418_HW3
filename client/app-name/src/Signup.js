@@ -2,11 +2,11 @@ import axios from 'axios'
 import './App.css';
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import Login from './Login.js';
-//Button that takes you to login page
+import ViewProject from './ViewProject.js';
+
 function MyButton() {
   return (
-    <Link to="/Login">
+    <Link to="/ViewProject">
       <button class="buttonStyle">Go to Login Page</button>
     </Link>
     

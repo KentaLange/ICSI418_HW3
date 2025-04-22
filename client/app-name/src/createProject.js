@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './App.css';
+import ViewProject from './ViewProject.js';
 
 const CreateProject = () => {
     const [proj_name, setProjectName] = useState('');
@@ -18,8 +19,8 @@ const CreateProject = () => {
 
     function MyButton() {
         return (
-          <Link to="/login">
-            <button class="buttonStyle">Go to Login Page</button>
+          <Link to="/ViewProject">
+            <button class="buttonStyle">Go to View Project Page</button>
           </Link>
           
         );
@@ -43,7 +44,7 @@ const CreateProject = () => {
           onChange={(e) => setProjectDescription(e.target.value)}
         />
         
-        <h1>Product_Ownere</h1>
+        <h1>Product_Owner</h1>
         <input
           type="Product_Owner"
           value={prod_owner_id}
